@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "description": "A design token pipeline built on Style Dictionary and distributed as a shadcn CLI registry.",
+  "packageManager": "pnpm@9.15.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
