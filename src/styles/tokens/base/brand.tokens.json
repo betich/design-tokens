@@ -1,0 +1,128 @@
+{
+  "brand": {
+    "color": {
+      "primary": {
+        "50": {
+          "$type": "color",
+          "$value": "#eef2ff",
+          "$description": "Brand primary ramp step 50. Overridden per brand.",
+          "$extensions": {
+            "mode": {
+              "acme": "#eef2ff",
+              "aurora": "#f0fdfa",
+              "ember": "#fff7ed"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#e0e7ff",
+          "$description": "Brand primary ramp step 100. Overridden per brand.",
+          "$extensions": {
+            "mode": {
+              "acme": "#e0e7ff",
+              "aurora": "#ccfbf1",
+              "ember": "#ffedd5"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#c7d2fe",
+          "$description": "Brand primary ramp step 200. Overridden per brand.",
+          "$extensions": {
+            "mode": {
+              "acme": "#c7d2fe",
+              "aurora": "#99f6e4",
+              "ember": "#fed7aa"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#a5b4fc",
+          "$description": "Brand primary ramp step 300. Overridden per brand.",
+          "$extensions": {
+            "mode": {
+              "acme": "#a5b4fc",
+              "aurora": "#5eead4",
+              "ember": "#fdba74"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#818cf8",
+          "$description": "Brand primary ramp step 400. Overridden per brand.",
+          "$extensions": {
+            "mode": {
+              "acme": "#818cf8",
+              "aurora": "#2dd4bf",
+              "ember": "#fb923c"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#4f46e5",
+          "$description": "Brand primary ramp step 500. Overridden per brand.",
+          "$extensions": {
+            "mode": {
+              "acme": "#4f46e5",
+              "aurora": "#0d9488",
+              "ember": "#ea580c"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#4338ca",
+          "$description": "Brand primary ramp step 600. Overridden per brand.",
+          "$extensions": {
+            "mode": {
+              "acme": "#4338ca",
+              "aurora": "#0f766e",
+              "ember": "#c2410c"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#3730a3",
+          "$description": "Brand primary ramp step 700. Overridden per brand.",
+          "$extensions": {
+            "mode": {
+              "acme": "#3730a3",
+              "aurora": "#115e59",
+              "ember": "#9a3412"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#312e81",
+          "$description": "Brand primary ramp step 800. Overridden per brand.",
+          "$extensions": {
+            "mode": {
+              "acme": "#312e81",
+              "aurora": "#134e4a",
+              "ember": "#7c2d12"
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#1e1b4b",
+          "$description": "Brand primary ramp step 900. Overridden per brand.",
+          "$extensions": {
+            "mode": {
+              "acme": "#1e1b4b",
+              "aurora": "#042f2e",
+              "ember": "#431407"
+            }
+          }
+        }
+      }
+    }
+  }
+}

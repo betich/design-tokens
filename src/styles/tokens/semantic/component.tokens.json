@@ -1,0 +1,435 @@
+{
+  "component": {
+    "button": {
+      "shared": {
+        "radius": {
+          "$type": "dimension",
+          "$value": "{reusable-style.radius.md}",
+          "$description": "Corner radius, all variants."
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{reusable-style.border.width.thin}",
+          "$description": "Border width for outlined variants."
+        }
+      },
+      "size": {
+        "sm": {
+          "height": {
+            "$type": "dimension",
+            "$value": "{base.size.8}",
+            "$description": "Small button height."
+          },
+          "p-x": {
+            "$type": "dimension",
+            "$value": "{reusable-style.spacing.p.sm}",
+            "$description": "Small button horizontal padding."
+          },
+          "gap": {
+            "$type": "dimension",
+            "$value": "{reusable-style.spacing.gap.2xs}",
+            "$description": "Small button icon gap."
+          }
+        },
+        "md": {
+          "height": {
+            "$type": "dimension",
+            "$value": "{base.size.10}",
+            "$description": "Medium button height."
+          },
+          "p-x": {
+            "$type": "dimension",
+            "$value": "{reusable-style.spacing.p.md}",
+            "$description": "Medium button horizontal padding."
+          },
+          "gap": {
+            "$type": "dimension",
+            "$value": "{reusable-style.spacing.gap.xs}",
+            "$description": "Medium button icon gap."
+          }
+        },
+        "lg": {
+          "height": {
+            "$type": "dimension",
+            "$value": "{base.size.12}",
+            "$description": "Large button height."
+          },
+          "p-x": {
+            "$type": "dimension",
+            "$value": "{reusable-style.spacing.p.lg}",
+            "$description": "Large button horizontal padding."
+          },
+          "gap": {
+            "$type": "dimension",
+            "$value": "{reusable-style.spacing.gap.sm}",
+            "$description": "Large button icon gap."
+          }
+        }
+      },
+      "primary": {
+        "bg": {
+          "default": {
+            "$type": "color",
+            "$value": "{theme.color.surface.accent}",
+            "$description": "Primary fill."
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{theme.color.surface.accent-hovered}",
+            "$description": "Primary hover fill."
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{theme.color.surface.accent-pressed}",
+            "$description": "Primary pressed fill."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{theme.color.surface.disabled}",
+            "$description": "Disabled fill."
+          }
+        },
+        "label": {
+          "default": {
+            "$type": "color",
+            "$value": "{theme.color.content.on-accent}",
+            "$description": "Primary label."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{theme.color.content.disabled}",
+            "$description": "Disabled label."
+          }
+        }
+      },
+      "danger": {
+        "bg": {
+          "default": {
+            "$type": "color",
+            "$value": "{base.color.red.600}",
+            "$description": "Destructive fill."
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{base.color.alpha.black.12}",
+            "$description": "Overlay blended over the default fill at build time."
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{base.color.alpha.black.24}",
+            "$description": "Overlay blended over the default fill at build time."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{theme.color.surface.disabled}",
+            "$description": "Disabled fill."
+          }
+        },
+        "label": {
+          "default": {
+            "$type": "color",
+            "$value": "{base.color.neutral.0}",
+            "$description": "Destructive label."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{theme.color.content.disabled}",
+            "$description": "Disabled label."
+          }
+        }
+      },
+      "secondary": {
+        "bg": {
+          "default": {
+            "$type": "color",
+            "$value": "{theme.color.surface.raised}",
+            "$description": "Secondary fill."
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{theme.color.surface.sunken}",
+            "$description": "Secondary hover fill."
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{base.color.neutral.200}",
+            "$description": "Secondary pressed fill."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{theme.color.surface.disabled}",
+            "$description": "Disabled fill."
+          }
+        },
+        "label": {
+          "default": {
+            "$type": "color",
+            "$value": "{theme.color.content.primary}",
+            "$description": "Secondary label."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{theme.color.content.disabled}",
+            "$description": "Disabled label."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{theme.color.line.strong}",
+            "$description": "Secondary border."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{theme.color.line.subtle}",
+            "$description": "Disabled border."
+          }
+        }
+      },
+      "ghost": {
+        "bg": {
+          "hovered": {
+            "$type": "color",
+            "$value": "{theme.color.surface.sunken}",
+            "$description": "Ghost hover fill."
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{base.color.neutral.200}",
+            "$description": "Ghost pressed fill."
+          }
+        },
+        "label": {
+          "default": {
+            "$type": "color",
+            "$value": "{theme.color.content.primary}",
+            "$description": "Ghost label."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{theme.color.content.disabled}",
+            "$description": "Disabled label."
+          }
+        }
+      }
+    },
+    "badge": {
+      "shared": {
+        "radius": {
+          "$type": "dimension",
+          "$value": "{reusable-style.radius.full}",
+          "$description": "Pill radius."
+        },
+        "p-x": {
+          "$type": "dimension",
+          "$value": "{reusable-style.spacing.p.xs}",
+          "$description": "Horizontal padding."
+        },
+        "p-y": {
+          "$type": "dimension",
+          "$value": "{reusable-style.spacing.p.2xs}",
+          "$description": "Vertical padding."
+        },
+        "gap": {
+          "$type": "dimension",
+          "$value": "{reusable-style.spacing.gap.2xs}",
+          "$description": "Icon gap."
+        }
+      },
+      "neutral": {
+        "bg": {
+          "$type": "color",
+          "$value": "{theme.color.surface.sunken}",
+          "$description": "neutral badge fill."
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{theme.color.content.secondary}",
+          "$description": "neutral badge label."
+        }
+      },
+      "accent": {
+        "bg": {
+          "$type": "color",
+          "$value": "{theme.color.surface.accent}",
+          "$description": "accent badge fill."
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{theme.color.content.on-accent}",
+          "$description": "accent badge label."
+        }
+      },
+      "success": {
+        "bg": {
+          "$type": "color",
+          "$value": "{theme.color.surface.success}",
+          "$description": "success badge fill."
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{theme.color.content.success}",
+          "$description": "success badge label."
+        }
+      },
+      "warning": {
+        "bg": {
+          "$type": "color",
+          "$value": "{theme.color.surface.warning}",
+          "$description": "warning badge fill."
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{theme.color.content.warning}",
+          "$description": "warning badge label."
+        }
+      },
+      "danger": {
+        "bg": {
+          "$type": "color",
+          "$value": "{theme.color.surface.danger}",
+          "$description": "danger badge fill."
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{theme.color.content.danger}",
+          "$description": "danger badge label."
+        }
+      }
+    },
+    "input": {
+      "shared": {
+        "radius": {
+          "$type": "dimension",
+          "$value": "{reusable-style.radius.md}",
+          "$description": "Corner radius."
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{reusable-style.border.width.thin}",
+          "$description": "Border width."
+        },
+        "height": {
+          "$type": "dimension",
+          "$value": "{base.size.10}",
+          "$description": "Control height."
+        },
+        "p-x": {
+          "$type": "dimension",
+          "$value": "{reusable-style.spacing.p.sm}",
+          "$description": "Horizontal padding."
+        }
+      },
+      "bg": {
+        "default": {
+          "$type": "color",
+          "$value": "{theme.color.surface.raised}",
+          "$description": "Field fill."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{theme.color.surface.disabled}",
+          "$description": "Disabled fill."
+        }
+      },
+      "label": {
+        "default": {
+          "$type": "color",
+          "$value": "{theme.color.content.primary}",
+          "$description": "Typed value."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{theme.color.content.disabled}",
+          "$description": "Disabled value."
+        }
+      },
+      "placeholder": {
+        "default": {
+          "$type": "color",
+          "$value": "{theme.color.content.muted}",
+          "$description": "Placeholder text."
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{theme.color.line.subtle}",
+          "$description": "Resting border."
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{theme.color.line.strong}",
+          "$description": "Hover border."
+        },
+        "focused": {
+          "$type": "color",
+          "$value": "{theme.color.line.accent}",
+          "$description": "Focus border."
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{theme.color.line.danger}",
+          "$description": "Invalid border."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{theme.color.line.subtle}",
+          "$description": "Disabled border."
+        }
+      }
+    },
+    "card": {
+      "shared": {
+        "radius": {
+          "$type": "dimension",
+          "$value": "{reusable-style.radius.lg}",
+          "$description": "Corner radius."
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{reusable-style.border.width.thin}",
+          "$description": "Border width."
+        },
+        "p": {
+          "$type": "dimension",
+          "$value": "{reusable-style.spacing.p.lg}",
+          "$description": "Inner padding."
+        },
+        "gap": {
+          "$type": "dimension",
+          "$value": "{reusable-style.spacing.gap.sm}",
+          "$description": "Stack gap."
+        }
+      },
+      "bg": {
+        "default": {
+          "$type": "color",
+          "$value": "{theme.color.surface.raised}",
+          "$description": "Card fill."
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{theme.color.line.subtle}",
+          "$description": "Card border."
+        }
+      },
+      "title": {
+        "default": {
+          "$type": "color",
+          "$value": "{theme.color.content.primary}",
+          "$description": "Card title."
+        }
+      },
+      "body": {
+        "default": {
+          "$type": "color",
+          "$value": "{theme.color.content.secondary}",
+          "$description": "Card body copy."
+        }
+      }
+    }
+  }
+}

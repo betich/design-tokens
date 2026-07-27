@@ -1,0 +1,28 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme inline {
+  --text-display-lg: var(--font-size-36); /** Page hero. */
+  --text-display-md: var(--font-size-30); /** Section hero. */
+  --text-heading-lg: var(--font-size-24); /** Page title. */
+  --text-heading-md: var(--font-size-20); /** Section title. */
+  --text-heading-sm: var(--font-size-18); /** Subsection title. */
+  --text-body-lg: var(--font-size-18); /** Long-form body copy. */
+  --text-body-md: var(--font-size-16); /** Default body copy. */
+  --text-body-sm: var(--font-size-14); /** Dense body copy. */
+  --text-label-lg: var(--font-size-16); /** Large control label. */
+  --text-label-md: var(--font-size-14); /** Default control label. */
+  --text-label-sm: var(--font-size-12); /** Small control label. */
+  --leading-display-lg: var(--font-line-height-44); /** Page hero. */
+  --leading-display-md: var(--font-line-height-36); /** Section hero. */
+  --leading-heading-lg: var(--font-line-height-32); /** Page title. */
+  --leading-heading-md: var(--font-line-height-28); /** Section title. */
+  --leading-heading-sm: var(--font-line-height-24); /** Subsection title. */
+  --leading-body-lg: var(--font-line-height-28); /** Long-form body copy. */
+  --leading-body-md: var(--font-line-height-24); /** Default body copy. */
+  --leading-body-sm: var(--font-line-height-20); /** Dense body copy. */
+  --leading-label-lg: var(--font-line-height-24); /** Large control label. */
+  --leading-label-md: var(--font-line-height-20); /** Default control label. */
+  --leading-label-sm: var(--font-line-height-16); /** Small control label. */
+}

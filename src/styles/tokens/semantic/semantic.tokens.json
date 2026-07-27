@@ -1,0 +1,690 @@
+{
+  "theme": {
+    "color": {
+      "surface": {
+        "page": {
+          "$type": "color",
+          "$value": "{base.color.neutral.0}",
+          "$description": "App background.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.neutral.0}",
+              "dark": "{base.color.neutral.950}"
+            }
+          }
+        },
+        "raised": {
+          "$type": "color",
+          "$value": "{base.color.neutral.0}",
+          "$description": "Cards, menus, anything above the page.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.neutral.0}",
+              "dark": "{base.color.neutral.900}"
+            }
+          }
+        },
+        "sunken": {
+          "$type": "color",
+          "$value": "{base.color.neutral.100}",
+          "$description": "Wells, inset areas, subtle hover fills.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.neutral.100}",
+              "dark": "{base.color.neutral.800}"
+            }
+          }
+        },
+        "accent": {
+          "$type": "color",
+          "$value": "{brand.color.primary.500}",
+          "$description": "Brand-filled surface.",
+          "$extensions": {
+            "mode": {
+              "light": "{brand.color.primary.500}",
+              "dark": "{brand.color.primary.400}"
+            }
+          }
+        },
+        "accent-hovered": {
+          "$type": "color",
+          "$value": "{brand.color.primary.600}",
+          "$description": "Brand-filled surface, hovered.",
+          "$extensions": {
+            "mode": {
+              "light": "{brand.color.primary.600}",
+              "dark": "{brand.color.primary.300}"
+            }
+          }
+        },
+        "accent-pressed": {
+          "$type": "color",
+          "$value": "{brand.color.primary.700}",
+          "$description": "Brand-filled surface, pressed.",
+          "$extensions": {
+            "mode": {
+              "light": "{brand.color.primary.700}",
+              "dark": "{brand.color.primary.200}"
+            }
+          }
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{base.color.green.50}",
+          "$description": "Success surface.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.green.50}",
+              "dark": "{base.color.green.600}"
+            }
+          }
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{base.color.amber.50}",
+          "$description": "Warning surface.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.amber.50}",
+              "dark": "{base.color.amber.600}"
+            }
+          }
+        },
+        "danger": {
+          "$type": "color",
+          "$value": "{base.color.red.50}",
+          "$description": "Danger surface.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.red.50}",
+              "dark": "{base.color.red.600}"
+            }
+          }
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{base.color.neutral.100}",
+          "$description": "Disabled surface.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.neutral.100}",
+              "dark": "{base.color.neutral.800}"
+            }
+          }
+        }
+      },
+      "content": {
+        "primary": {
+          "$type": "color",
+          "$value": "{base.color.neutral.900}",
+          "$description": "Body and heading text.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.neutral.900}",
+              "dark": "{base.color.neutral.50}"
+            }
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "{base.color.neutral.600}",
+          "$description": "Supporting text.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.neutral.600}",
+              "dark": "{base.color.neutral.300}"
+            }
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$value": "{base.color.neutral.400}",
+          "$description": "Placeholders and hints.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.neutral.400}",
+              "dark": "{base.color.neutral.500}"
+            }
+          }
+        },
+        "on-accent": {
+          "$type": "color",
+          "$value": "{base.color.neutral.0}",
+          "$description": "Text on an accent surface.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.neutral.0}",
+              "dark": "{base.color.neutral.0}"
+            }
+          }
+        },
+        "accent": {
+          "$type": "color",
+          "$value": "{brand.color.primary.600}",
+          "$description": "Links and brand text.",
+          "$extensions": {
+            "mode": {
+              "light": "{brand.color.primary.600}",
+              "dark": "{brand.color.primary.300}"
+            }
+          }
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{base.color.green.600}",
+          "$description": "Success text.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.green.600}",
+              "dark": "{base.color.green.50}"
+            }
+          }
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{base.color.amber.600}",
+          "$description": "Warning text.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.amber.600}",
+              "dark": "{base.color.amber.50}"
+            }
+          }
+        },
+        "danger": {
+          "$type": "color",
+          "$value": "{base.color.red.600}",
+          "$description": "Danger text.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.red.600}",
+              "dark": "{base.color.red.50}"
+            }
+          }
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{base.color.neutral.400}",
+          "$description": "Disabled text.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.neutral.400}",
+              "dark": "{base.color.neutral.600}"
+            }
+          }
+        }
+      },
+      "line": {
+        "subtle": {
+          "$type": "color",
+          "$value": "{base.color.neutral.200}",
+          "$description": "Default separator.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.neutral.200}",
+              "dark": "{base.color.neutral.800}"
+            }
+          }
+        },
+        "strong": {
+          "$type": "color",
+          "$value": "{base.color.neutral.300}",
+          "$description": "Emphasised border.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.neutral.300}",
+              "dark": "{base.color.neutral.700}"
+            }
+          }
+        },
+        "accent": {
+          "$type": "color",
+          "$value": "{brand.color.primary.500}",
+          "$description": "Focus ring and active border.",
+          "$extensions": {
+            "mode": {
+              "light": "{brand.color.primary.500}",
+              "dark": "{brand.color.primary.400}"
+            }
+          }
+        },
+        "danger": {
+          "$type": "color",
+          "$value": "{base.color.red.500}",
+          "$description": "Error border.",
+          "$extensions": {
+            "mode": {
+              "light": "{base.color.red.500}",
+              "dark": "{base.color.red.400}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "reusable-style": {
+    "border": {
+      "width": {
+        "none": {
+          "$type": "dimension",
+          "$value": "{base.border.0}",
+          "$description": "No border."
+        },
+        "thin": {
+          "$type": "dimension",
+          "$value": "{base.border.1}",
+          "$description": "Default 1px border."
+        },
+        "thick": {
+          "$type": "dimension",
+          "$value": "{base.border.2}",
+          "$description": "Emphasised 2px border."
+        }
+      }
+    },
+    "radius": {
+      "none": {
+        "$type": "dimension",
+        "$value": "{base.radius.0}",
+        "$description": "Square corners."
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{base.radius.1}",
+        "$description": "Subtle rounding."
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{base.radius.2}",
+        "$description": "Default control rounding."
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{base.radius.3}",
+        "$description": "Card rounding."
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "{base.radius.4}",
+        "$description": "Large surface rounding."
+      },
+      "full": {
+        "$type": "dimension",
+        "$value": "{base.radius.full}",
+        "$description": "Pill / circle."
+      }
+    },
+    "blur": {
+      "sm": {
+        "$type": "dimension",
+        "$value": "{base.blur.1}",
+        "$description": "sm backdrop blur."
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{base.blur.2}",
+        "$description": "md backdrop blur."
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{base.blur.3}",
+        "$description": "lg backdrop blur."
+      }
+    },
+    "drop-shadow": {
+      "sm": {
+        "position-x": {
+          "$type": "dimension",
+          "$value": "{base.effect.offset.0}",
+          "$description": "Resting elevation."
+        },
+        "position-y": {
+          "$type": "dimension",
+          "$value": "{base.effect.offset.1}",
+          "$description": "Resting elevation."
+        },
+        "blur": {
+          "$type": "dimension",
+          "$value": "{base.effect.blur.2}",
+          "$description": "Resting elevation."
+        },
+        "spread": {
+          "$type": "dimension",
+          "$value": "{base.effect.spread.0}",
+          "$description": "Resting elevation."
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{base.color.alpha.black.8}",
+          "$description": "Resting elevation."
+        }
+      },
+      "md": {
+        "position-x": {
+          "$type": "dimension",
+          "$value": "{base.effect.offset.0}",
+          "$description": "Cards and popovers."
+        },
+        "position-y": {
+          "$type": "dimension",
+          "$value": "{base.effect.offset.2}",
+          "$description": "Cards and popovers."
+        },
+        "blur": {
+          "$type": "dimension",
+          "$value": "{base.effect.blur.3}",
+          "$description": "Cards and popovers."
+        },
+        "spread": {
+          "$type": "dimension",
+          "$value": "{base.effect.spread.0}",
+          "$description": "Cards and popovers."
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{base.color.alpha.black.12}",
+          "$description": "Cards and popovers."
+        }
+      },
+      "lg": {
+        "position-x": {
+          "$type": "dimension",
+          "$value": "{base.effect.offset.0}",
+          "$description": "Modals and overlays."
+        },
+        "position-y": {
+          "$type": "dimension",
+          "$value": "{base.effect.offset.4}",
+          "$description": "Modals and overlays."
+        },
+        "blur": {
+          "$type": "dimension",
+          "$value": "{base.effect.blur.4}",
+          "$description": "Modals and overlays."
+        },
+        "spread": {
+          "$type": "dimension",
+          "$value": "{base.effect.spread.neg-1}",
+          "$description": "Modals and overlays."
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{base.color.alpha.black.16}",
+          "$description": "Modals and overlays."
+        }
+      }
+    },
+    "spacing": {
+      "p": {
+        "none": {
+          "$type": "dimension",
+          "$value": "{base.size.0}",
+          "$description": "Padding step none."
+        },
+        "2xs": {
+          "$type": "dimension",
+          "$value": "{base.size.1}",
+          "$description": "Padding step 2xs."
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": "{base.size.2}",
+          "$description": "Padding step xs."
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "{base.size.3}",
+          "$description": "Padding step sm."
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{base.size.4}",
+          "$description": "Padding step md."
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{base.size.6}",
+          "$description": "Padding step lg."
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{base.size.8}",
+          "$description": "Padding step xl."
+        }
+      },
+      "m": {
+        "none": {
+          "$type": "dimension",
+          "$value": "{base.size.0}",
+          "$description": "Margin step none."
+        },
+        "2xs": {
+          "$type": "dimension",
+          "$value": "{base.size.1}",
+          "$description": "Margin step 2xs."
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": "{base.size.2}",
+          "$description": "Margin step xs."
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "{base.size.3}",
+          "$description": "Margin step sm."
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{base.size.4}",
+          "$description": "Margin step md."
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{base.size.6}",
+          "$description": "Margin step lg."
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{base.size.8}",
+          "$description": "Margin step xl."
+        }
+      },
+      "gap": {
+        "none": {
+          "$type": "dimension",
+          "$value": "{base.size.0}",
+          "$description": "Gap step none."
+        },
+        "2xs": {
+          "$type": "dimension",
+          "$value": "{base.size.1}",
+          "$description": "Gap step 2xs."
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": "{base.size.2}",
+          "$description": "Gap step xs."
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "{base.size.3}",
+          "$description": "Gap step sm."
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{base.size.4}",
+          "$description": "Gap step md."
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{base.size.6}",
+          "$description": "Gap step lg."
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{base.size.8}",
+          "$description": "Gap step xl."
+        }
+      }
+    }
+  },
+  "layout": {
+    "page": {
+      "max-width": {
+        "$type": "dimension",
+        "$value": "{base.layout.container.1280}",
+        "$description": "Maximum content width; narrows at each breakpoint.",
+        "$extensions": {
+          "mode": {
+            "desktop-1440": "{base.layout.container.1280}",
+            "desktop-1280": "{base.layout.container.1024}",
+            "tablet-768": "{base.layout.container.768}",
+            "mobile-376": "{base.layout.container.640}"
+          }
+        }
+      },
+      "gutter": {
+        "$type": "dimension",
+        "$value": "{base.layout.gutter.32}",
+        "$description": "Horizontal page gutter.",
+        "$extensions": {
+          "mode": {
+            "desktop-1440": "{base.layout.gutter.32}",
+            "desktop-1280": "{base.layout.gutter.32}",
+            "tablet-768": "{base.layout.gutter.24}",
+            "mobile-376": "{base.layout.gutter.16}"
+          }
+        }
+      },
+      "columns": {
+        "$type": "number",
+        "$value": "{base.layout.columns.12}",
+        "$description": "Grid column count.",
+        "$extensions": {
+          "mode": {
+            "desktop-1440": "{base.layout.columns.12}",
+            "desktop-1280": "{base.layout.columns.12}",
+            "tablet-768": "{base.layout.columns.8}",
+            "mobile-376": "{base.layout.columns.4}"
+          }
+        }
+      }
+    }
+  },
+  "typescale": {
+    "text": {
+      "display-lg": {
+        "$type": "dimension",
+        "$value": "{base.font.size.36}",
+        "$description": "Page hero."
+      },
+      "display-md": {
+        "$type": "dimension",
+        "$value": "{base.font.size.30}",
+        "$description": "Section hero."
+      },
+      "heading-lg": {
+        "$type": "dimension",
+        "$value": "{base.font.size.24}",
+        "$description": "Page title."
+      },
+      "heading-md": {
+        "$type": "dimension",
+        "$value": "{base.font.size.20}",
+        "$description": "Section title."
+      },
+      "heading-sm": {
+        "$type": "dimension",
+        "$value": "{base.font.size.18}",
+        "$description": "Subsection title."
+      },
+      "body-lg": {
+        "$type": "dimension",
+        "$value": "{base.font.size.18}",
+        "$description": "Long-form body copy."
+      },
+      "body-md": {
+        "$type": "dimension",
+        "$value": "{base.font.size.16}",
+        "$description": "Default body copy."
+      },
+      "body-sm": {
+        "$type": "dimension",
+        "$value": "{base.font.size.14}",
+        "$description": "Dense body copy."
+      },
+      "label-lg": {
+        "$type": "dimension",
+        "$value": "{base.font.size.16}",
+        "$description": "Large control label."
+      },
+      "label-md": {
+        "$type": "dimension",
+        "$value": "{base.font.size.14}",
+        "$description": "Default control label."
+      },
+      "label-sm": {
+        "$type": "dimension",
+        "$value": "{base.font.size.12}",
+        "$description": "Small control label."
+      }
+    },
+    "leading": {
+      "display-lg": {
+        "$type": "dimension",
+        "$value": "{base.font.line-height.44}",
+        "$description": "Page hero."
+      },
+      "display-md": {
+        "$type": "dimension",
+        "$value": "{base.font.line-height.36}",
+        "$description": "Section hero."
+      },
+      "heading-lg": {
+        "$type": "dimension",
+        "$value": "{base.font.line-height.32}",
+        "$description": "Page title."
+      },
+      "heading-md": {
+        "$type": "dimension",
+        "$value": "{base.font.line-height.28}",
+        "$description": "Section title."
+      },
+      "heading-sm": {
+        "$type": "dimension",
+        "$value": "{base.font.line-height.24}",
+        "$description": "Subsection title."
+      },
+      "body-lg": {
+        "$type": "dimension",
+        "$value": "{base.font.line-height.28}",
+        "$description": "Long-form body copy."
+      },
+      "body-md": {
+        "$type": "dimension",
+        "$value": "{base.font.line-height.24}",
+        "$description": "Default body copy."
+      },
+      "body-sm": {
+        "$type": "dimension",
+        "$value": "{base.font.line-height.20}",
+        "$description": "Dense body copy."
+      },
+      "label-lg": {
+        "$type": "dimension",
+        "$value": "{base.font.line-height.24}",
+        "$description": "Large control label."
+      },
+      "label-md": {
+        "$type": "dimension",
+        "$value": "{base.font.line-height.20}",
+        "$description": "Default control label."
+      },
+      "label-sm": {
+        "$type": "dimension",
+        "$value": "{base.font.line-height.16}",
+        "$description": "Small control label."
+      }
+    }
+  }
+}

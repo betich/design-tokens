@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # The generated CSS is committed. A diff here means someone edited
+      # src/styles/**/*.css by hand instead of editing the tokens.
+      - name: Tokens are up to date
+        run: |
+          pnpm build:tokens
+          git diff --exit-code src/styles
+
+      - run: pnpm lint
+
+      - run: pnpm test:ci
+
+      - run: pnpm build-storybook --output-dir dist-site
+
+      # Storybook and the registry publish from one origin, so REGISTRY_URL
+      # and the docs URL are the same host.
+      - name: Build registry
+        run: |
+          pnpm build:registry
+          cp -r public/r dist-site/r
+        env:
+          REGISTRY_URL: ${{ vars.REGISTRY_URL }}
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: dist-site
+
+  deploy:
+    needs: verify
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

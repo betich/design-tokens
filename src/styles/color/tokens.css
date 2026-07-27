@@ -1,0 +1,55 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme {
+  --color-surface-page: var(--color-neutral-0);
+  --color-surface-raised: var(--color-neutral-0);
+  --color-surface-sunken: var(--color-neutral-100);
+  --color-surface-accent: var(--color-primary-500);
+  --color-surface-accent-hovered: var(--color-primary-600);
+  --color-surface-accent-pressed: var(--color-primary-700);
+  --color-surface-success: var(--color-green-50);
+  --color-surface-warning: var(--color-amber-50);
+  --color-surface-danger: var(--color-red-50);
+  --color-surface-disabled: var(--color-neutral-100);
+  --color-content-primary: var(--color-neutral-900);
+  --color-content-secondary: var(--color-neutral-600);
+  --color-content-muted: var(--color-neutral-400);
+  --color-content-on-accent: var(--color-neutral-0);
+  --color-content-accent: var(--color-primary-600);
+  --color-content-success: var(--color-green-600);
+  --color-content-warning: var(--color-amber-600);
+  --color-content-danger: var(--color-red-600);
+  --color-content-disabled: var(--color-neutral-400);
+  --color-line-subtle: var(--color-neutral-200);
+  --color-line-strong: var(--color-neutral-300);
+  --color-line-accent: var(--color-primary-500);
+  --color-line-danger: var(--color-red-500);
+}
+
+[data-theme='dark'] {
+  --color-surface-page: var(--color-neutral-950);
+  --color-surface-raised: var(--color-neutral-900);
+  --color-surface-sunken: var(--color-neutral-800);
+  --color-surface-accent: var(--color-primary-400);
+  --color-surface-accent-hovered: var(--color-primary-300);
+  --color-surface-accent-pressed: var(--color-primary-200);
+  --color-surface-success: var(--color-green-600);
+  --color-surface-warning: var(--color-amber-600);
+  --color-surface-danger: var(--color-red-600);
+  --color-surface-disabled: var(--color-neutral-800);
+  --color-content-primary: var(--color-neutral-50);
+  --color-content-secondary: var(--color-neutral-300);
+  --color-content-muted: var(--color-neutral-500);
+  --color-content-on-accent: var(--color-neutral-0);
+  --color-content-accent: var(--color-primary-300);
+  --color-content-success: var(--color-green-50);
+  --color-content-warning: var(--color-amber-50);
+  --color-content-danger: var(--color-red-50);
+  --color-content-disabled: var(--color-neutral-600);
+  --color-line-subtle: var(--color-neutral-800);
+  --color-line-strong: var(--color-neutral-700);
+  --color-line-accent: var(--color-primary-400);
+  --color-line-danger: var(--color-red-400);
+}

@@ -1,0 +1,27 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme {
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif; /** Default UI typeface. */
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace; /** Monospace typeface for code. */
+  --font-size-12: 0.75rem; /** Font size 12px (0.75rem). */
+  --font-size-14: 0.875rem; /** Font size 14px (0.875rem). */
+  --font-size-16: 1rem; /** Font size 16px (1rem). */
+  --font-size-18: 1.125rem; /** Font size 18px (1.125rem). */
+  --font-size-20: 1.25rem; /** Font size 20px (1.25rem). */
+  --font-size-24: 1.5rem; /** Font size 24px (1.5rem). */
+  --font-size-30: 1.875rem; /** Font size 30px (1.875rem). */
+  --font-size-36: 2.25rem; /** Font size 36px (2.25rem). */
+  --font-weight-regular: 400; /** Font weight 400. */
+  --font-weight-medium: 500; /** Font weight 500. */
+  --font-weight-semibold: 600; /** Font weight 600. */
+  --font-weight-bold: 700; /** Font weight 700. */
+  --font-line-height-16: 1rem; /** Line height 16px (1rem). */
+  --font-line-height-20: 1.25rem; /** Line height 20px (1.25rem). */
+  --font-line-height-24: 1.5rem; /** Line height 24px (1.5rem). */
+  --font-line-height-28: 1.75rem; /** Line height 28px (1.75rem). */
+  --font-line-height-32: 2rem; /** Line height 32px (2rem). */
+  --font-line-height-36: 2.25rem; /** Line height 36px (2.25rem). */
+  --font-line-height-44: 2.75rem; /** Line height 44px (2.75rem). */
+}

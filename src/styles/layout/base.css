@@ -1,0 +1,16 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme {
+  --layout-container-640: 40rem; /** Container max width at the 640px breakpoint. */
+  --layout-container-768: 48rem; /** Container max width at the 768px breakpoint. */
+  --layout-container-1024: 64rem; /** Container max width at the 1024px breakpoint. */
+  --layout-container-1280: 80rem; /** Container max width at the 1280px breakpoint. */
+  --layout-columns-4: 4; /** 4-column grid. */
+  --layout-columns-8: 8; /** 8-column grid. */
+  --layout-columns-12: 12; /** 12-column grid. */
+  --layout-gutter-16: 1rem; /** Grid gutter 1rem. */
+  --layout-gutter-24: 1.5rem; /** Grid gutter 1.5rem. */
+  --layout-gutter-32: 2rem; /** Grid gutter 2rem. */
+}

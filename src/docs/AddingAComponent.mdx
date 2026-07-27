@@ -1,0 +1,128 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Design Tokens/Adding a Component" />
+
+# Adding a component
+
+The end-to-end workflow, using a hypothetical `Switch`.
+
+## 1. Author its tokens
+
+Add a namespace under `component` in
+`src/styles/tokens/semantic/component.tokens.json`. Reference the semantic
+layer — never a primitive, and never a literal:
+
+```jsonc
+"switch": {
+  "shared": {
+    "radius": { "$type": "dimension", "$value": "{reusable-style.radius.full}" },
+    "width":  { "$type": "dimension", "$value": "{base.size.10}" }
+  },
+  "track": {
+    "off": { "$type": "color", "$value": "{theme.color.surface.sunken}" },
+    "on":  { "$type": "color", "$value": "{theme.color.surface.accent}" }
+  }
+}
+```
+
+The one exception is a state you want pre-blended, which references
+`base.color.alpha.*` directly — see the Pipeline page.
+
+## 2. Register it with the build
+
+Add the name to `.sd/components.ts`:
+
+```ts
+export const COMPONENTS = [
+  'button',
+  'badge',
+  'input',
+  'card',
+  'switch',
+] as const
+```
+
+That is the whole wiring. The Tailwind platform derives
+`src/styles/component/switch.css` from the list, and the build action
+regenerates `component/index.css` so the stylesheet is imported.
+
+If its states need build-time alpha blending, add it to `BLENDED_COMPONENTS`
+too.
+
+## 3. Build
+
+```bash
+pnpm build:tokens
+```
+
+Check the output before writing any component code:
+
+```css
+/* src/styles/component/switch.css */
+@theme inline {
+  --radius-switch-shared-radius: var(--radius-full);
+  --spacing-switch-shared-width: var(--size-10);
+  --color-switch-track-off: var(--color-surface-sunken);
+  --color-switch-track-on: var(--color-surface-accent);
+}
+```
+
+If a variable is missing, the filter did not match — check the token's position
+in the JSON, not its name.
+
+## 4. Write the component
+
+`src/components/atoms/Switch/`, mirroring the existing atoms:
+
+```
+Switch.tsx            the component
+switchVariants.ts     the `tv()` definition
+index.ts              barrel
+Switch.stories.tsx    stories
+Switch.test.tsx       unit tests
+Switch.registry.ts    registry entry
+```
+
+Keep the styling in the variants file, and use only the classes the previous
+step generated:
+
+```ts
+export const switchVariants = tv({
+  base: 'rounded-switch-shared-radius w-switch-shared-width bg-switch-track-off',
+  variants: {
+    checked: { true: 'bg-switch-track-on' },
+  },
+})
+```
+
+The rule that makes the system hold: **a component names component tokens
+only.** Reaching for `bg-primary-500` or `bg-neutral-100` in a component is the
+one thing that breaks theming, and it is the thing to look for in review.
+
+## 5. Publish it
+
+Add a `Switch.registry.ts` following the existing pattern, then:
+
+```bash
+pnpm build:registry
+```
+
+`registry.config.ts` globs `**/*.registry.ts`, so there is no list to update.
+It writes `registry.json`, and `shadcn build` expands it into `public/r/*.json`
+for the CLI to fetch.
+
+Add the name to `REGISTRY_COMPONENTS` in `src/.registry/shared/components.ts`
+so that other items depending on it resolve to this registry rather than to
+upstream shadcn.
+
+## 6. Verify
+
+```bash
+pnpm test         # unit tests
+pnpm storybook    # visual check across themes and brands
+pnpm lint
+```
+
+Check the component in both themes and all three brands before opening a pull
+request. Most token mistakes are invisible in light mode with the default
+brand.

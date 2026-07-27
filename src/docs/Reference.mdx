@@ -1,0 +1,168 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+import { Grid, Row, SpacingBar, Swatch } from './TokenPreview'
+
+<Meta title="Design Tokens/Reference" />
+
+# Token reference
+
+Everything below is rendered from the live custom properties in
+`src/styles/`, so it cannot drift from the build. Use the **theme** and
+**brand** toolbar controls to watch the semantic layer move while the
+primitives stay put.
+
+## Semantic colour
+
+The vocabulary components are allowed to name. Three families, and every one of
+them flips with `[data-theme]`.
+
+### Surface — what a thing sits on
+
+<Grid>
+  <Swatch token="--color-surface-page" />
+  <Swatch token="--color-surface-raised" />
+  <Swatch token="--color-surface-sunken" />
+  <Swatch token="--color-surface-accent" />
+  <Swatch token="--color-surface-accent-hovered" />
+  <Swatch token="--color-surface-accent-pressed" />
+  <Swatch token="--color-surface-success" />
+  <Swatch token="--color-surface-warning" />
+  <Swatch token="--color-surface-danger" />
+  <Swatch token="--color-surface-disabled" />
+</Grid>
+
+### Content — text and icons
+
+<Grid>
+  <Swatch token="--color-content-primary" />
+  <Swatch token="--color-content-secondary" />
+  <Swatch token="--color-content-muted" />
+  <Swatch token="--color-content-on-accent" />
+  <Swatch token="--color-content-accent" />
+  <Swatch token="--color-content-success" />
+  <Swatch token="--color-content-warning" />
+  <Swatch token="--color-content-danger" />
+  <Swatch token="--color-content-disabled" />
+</Grid>
+
+### Line — borders and separators
+
+<Grid>
+  <Swatch token="--color-line-subtle" />
+  <Swatch token="--color-line-strong" />
+  <Swatch token="--color-line-accent" />
+  <Swatch token="--color-line-danger" />
+</Grid>
+
+## Brand ramp
+
+The only tokens that respond to `[data-brand]`. Everything brand-coloured in
+the system reaches these through the semantic layer, never directly.
+
+<Grid>
+  <Swatch token="--color-primary-50" name="primary 50" />
+  <Swatch token="--color-primary-100" name="primary 100" />
+  <Swatch token="--color-primary-200" name="primary 200" />
+  <Swatch token="--color-primary-300" name="primary 300" />
+  <Swatch token="--color-primary-400" name="primary 400" />
+  <Swatch token="--color-primary-500" name="primary 500" />
+  <Swatch token="--color-primary-600" name="primary 600" />
+  <Swatch token="--color-primary-700" name="primary 700" />
+  <Swatch token="--color-primary-800" name="primary 800" />
+  <Swatch token="--color-primary-900" name="primary 900" />
+</Grid>
+
+## Type scale
+
+Each step is a `--text-*` / `--leading-*` pair, so a class always comes with
+its line height: `text-body-md leading-body-md`.
+
+<div className="py-sm">
+  <Row token="--text-display-lg">
+    <span className="text-display-lg leading-display-lg">Display large</span>
+  </Row>
+  <Row token="--text-display-md">
+    <span className="text-display-md leading-display-md">Display medium</span>
+  </Row>
+  <Row token="--text-heading-lg">
+    <span className="text-heading-lg leading-heading-lg">Heading large</span>
+  </Row>
+  <Row token="--text-heading-md">
+    <span className="text-heading-md leading-heading-md">Heading medium</span>
+  </Row>
+  <Row token="--text-heading-sm">
+    <span className="text-heading-sm leading-heading-sm">Heading small</span>
+  </Row>
+  <Row token="--text-body-lg">
+    <span className="text-body-lg leading-body-lg">Body large</span>
+  </Row>
+  <Row token="--text-body-md">
+    <span className="text-body-md leading-body-md">Body medium</span>
+  </Row>
+  <Row token="--text-body-sm">
+    <span className="text-body-sm leading-body-sm">Body small</span>
+  </Row>
+  <Row token="--text-label-lg">
+    <span className="text-label-lg leading-label-lg">Label large</span>
+  </Row>
+  <Row token="--text-label-md">
+    <span className="text-label-md leading-label-md">Label medium</span>
+  </Row>
+  <Row token="--text-label-sm">
+    <span className="text-label-sm leading-label-sm">Label small</span>
+  </Row>
+</div>
+
+## Spacing
+
+Padding, margin and gap share one scale. Each step is also emitted as a
+utility, so `p-md`, `m-lg` and `gap-sm` are real classes.
+
+<div className="gap-xs py-sm flex flex-col">
+  <SpacingBar token="--spacing-p-2xs" />
+  <SpacingBar token="--spacing-p-xs" />
+  <SpacingBar token="--spacing-p-sm" />
+  <SpacingBar token="--spacing-p-md" />
+  <SpacingBar token="--spacing-p-lg" />
+  <SpacingBar token="--spacing-p-xl" />
+</div>
+
+## Radius
+
+<div className="gap-md py-sm flex flex-wrap items-end">
+  {['none', 'sm', 'md', 'lg', 'xl', 'full'].map((step) => (
+    <div key={step} className="gap-2xs flex flex-col items-center">
+      <div
+        className="bg-surface-accent size-14"
+        style={{ borderRadius: `var(--radius-${step})` }}
+      />
+      <code className="text-content-muted text-[11px]">{step}</code>
+    </div>
+  ))}
+</div>
+
+## Elevation
+
+Each shadow is recombined by the build from five separate parts.
+
+<div className="gap-lg py-md flex flex-wrap items-end">
+  {['sm', 'md', 'lg'].map((step) => (
+    <div key={step} className="gap-xs flex flex-col items-center">
+      <div
+        className="bg-surface-raised border-line-subtle size-20 rounded-lg border"
+        style={{ boxShadow: `var(--shadow-${step})` }}
+      />
+      <code className="text-content-muted text-[11px]">--shadow-{step}</code>
+    </div>
+  ))}
+</div>
+
+## Responsive layout
+
+These three are redefined per breakpoint by `layout/tokens.css`. Resize the
+preview to watch them change.
+
+<div className="py-sm">
+  <Row token="--page-max-width">Maximum content width</Row>
+  <Row token="--page-gutter">Horizontal page gutter</Row>
+  <Row token="--page-columns">Grid column count</Row>
+</div>

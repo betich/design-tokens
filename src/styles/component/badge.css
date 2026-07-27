@@ -1,0 +1,20 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme inline {
+  --radius-badge-shared-radius: var(--radius-full); /** Pill radius. */
+  --spacing-badge-shared-p-x: var(--spacing-p-xs); /** Horizontal padding. */
+  --spacing-badge-shared-p-y: var(--spacing-p-2xs); /** Vertical padding. */
+  --spacing-badge-shared-gap: var(--spacing-gap-2xs); /** Icon gap. */
+  --color-badge-neutral-bg: var(--color-surface-sunken); /** neutral badge fill. */
+  --color-badge-neutral-label: var(--color-content-secondary); /** neutral badge label. */
+  --color-badge-accent-bg: var(--color-surface-accent); /** accent badge fill. */
+  --color-badge-accent-label: var(--color-content-on-accent); /** accent badge label. */
+  --color-badge-success-bg: var(--color-surface-success); /** success badge fill. */
+  --color-badge-success-label: var(--color-content-success); /** success badge label. */
+  --color-badge-warning-bg: var(--color-surface-warning); /** warning badge fill. */
+  --color-badge-warning-label: var(--color-content-warning); /** warning badge label. */
+  --color-badge-danger-bg: var(--color-surface-danger); /** danger badge fill. */
+  --color-badge-danger-label: var(--color-content-danger); /** danger badge label. */
+}

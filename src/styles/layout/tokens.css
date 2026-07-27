@@ -1,0 +1,35 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --page-max-width: var(--layout-container-1280);
+    --page-gutter: var(--layout-gutter-32);
+    --page-columns: var(--layout-columns-12);
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  :root {
+    --page-max-width: var(--layout-container-1024);
+    --page-gutter: var(--layout-gutter-32);
+    --page-columns: var(--layout-columns-12);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  :root {
+    --page-max-width: var(--layout-container-768);
+    --page-gutter: var(--layout-gutter-24);
+    --page-columns: var(--layout-columns-8);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --page-max-width: var(--layout-container-640);
+    --page-gutter: var(--layout-gutter-16);
+    --page-columns: var(--layout-columns-4);
+  }
+}

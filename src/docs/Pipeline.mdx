@@ -1,0 +1,228 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Design Tokens/Pipeline" />
+
+# The pipeline
+
+`pnpm build:tokens` runs `.sd/sd.config.ts`, which globs every JSON file under
+`src/styles/tokens/`, applies a set of custom transforms and formats, and
+writes CSS into `src/styles/`. Nothing in `src/styles/**/*.css` is written by
+hand.
+
+```
+src/styles/tokens/**/*.json
+        │
+        │  transforms   rename tokens for their Tailwind namespace
+        │  filters      select a slice of the graph per output file
+        │  formats      decide the shape of the CSS
+        ▼
+src/styles/{color,border,effect,layout,spacing,typography,component}/*.css
+        │
+        ▼
+src/styles/index.css  →  Tailwind v4
+```
+
+## Anatomy of a token
+
+Tokens are [DTCG](https://tr.designtokens.org/) format. The interesting part is
+`$extensions.mode`, which carries _variants of the same token_ on one node:
+
+```jsonc
+"surface": {
+  "page": {
+    "$type": "color",
+    "$value": "{base.color.neutral.0}",
+    "$extensions": {
+      "mode": {
+        "light": "{base.color.neutral.0}",
+        "dark":  "{base.color.neutral.950}"
+      }
+    }
+  }
+}
+```
+
+One token, one name, two values. The same mechanism carries brands
+(`mode.acme`, `mode.aurora`) and breakpoints (`mode.mobile-376`). What a mode
+_becomes_ is decided by the format that consumes it — a theme selector, a brand
+selector or a media query.
+
+## The two transforms
+
+**`name/cti/no-top`** drops the collection segment from a token's name.
+Collections namespace the JSON so references read clearly; they carry no
+meaning in CSS.
+
+```
+base.color.neutral.0      →  --color-neutral-0
+reusable-style.radius.md  →  --radius-md
+```
+
+This is also what lands tokens on the Tailwind v4 theme namespaces —
+`--color-*`, `--spacing-*`, `--text-*`, `--radius-*` — which is what makes them
+generate utilities.
+
+**`name/cti/tailwind-var-reference`** re-prefixes component tokens by type,
+because a raw component name generates no utility at all:
+
+| Token                                 | Named                               | Utility                        |
+| ------------------------------------- | ----------------------------------- | ------------------------------ |
+| `component.button.primary.bg.default` | `--color-button-primary-bg-default` | `bg-button-primary-bg-default` |
+| `component.button.size.md.height`     | `--spacing-button-size-md-height`   | `h-button-size-md-height`      |
+| `component.button.shared.radius`      | `--radius-button-shared-radius`     | `rounded-button-shared-radius` |
+
+Border widths are the exception — Tailwind has no namespace for them, so they
+keep their plain name and components read them directly with
+`border-(length:--button-shared-border-width)`.
+
+## The eight formats
+
+Each one handles a shape of CSS that Style Dictionary does not produce
+out of the box.
+
+### `tailwindcss/primitives` → `@theme`
+
+Literal values. `@theme` rather than `@theme inline`, because there is nothing
+to dereference.
+
+### `tailwindcss/semantic` → `@theme inline`
+
+References. `inline` keeps the `var()` in the generated utility instead of
+resolving it at build time, which is precisely what makes runtime theming work.
+
+### `css/variables-dark-mode`
+
+Splits a `mode.light` / `mode.dark` token into two declarations of the same
+name:
+
+```css
+@theme {
+  --color-surface-page: var(--color-neutral-0);
+}
+[data-theme='dark'] {
+  --color-surface-page: var(--color-neutral-950);
+}
+```
+
+### `css/variables-brand-mode`
+
+The same trick for brands, except the brand list is _discovered from the
+tokens_ rather than hard-coded. Adding a brand in the design tool is the whole
+change — no code here learns its name.
+
+```css
+[data-brand='acme'] {
+  --color-primary-500: #4f46e5;
+}
+[data-brand='aurora'] {
+  --color-primary-500: #0d9488;
+}
+[data-brand='ember'] {
+  --color-primary-500: #ea580c;
+}
+```
+
+Because `data-theme` and `data-brand` are separate attributes on the same
+element, the two switch independently.
+
+### `tailwindcss/spacing-utilities`
+
+`--spacing-p-md` alone gives Tailwind no way to know it means padding, so this
+format also emits the utility:
+
+```css
+@utility p-md {
+  padding: var(--spacing-p-md);
+}
+@utility gap-sm {
+  gap: var(--spacing-gap-sm);
+}
+```
+
+A designer renaming a step renames the class with it.
+
+### `css/layout-media-queries`
+
+Turns modes into breakpoints instead of selectors. These land in `:root`
+rather than `@theme` deliberately — they are values to read, not a namespace
+to generate utilities from.
+
+```css
+@media screen and (max-width: 767px) {
+  :root {
+    --page-max-width: var(--layout-container-640);
+  }
+}
+```
+
+`index.css` wraps them in a single `page-container` utility that needs no media
+queries of its own.
+
+### `tailwindcss/components/common`
+
+One `@theme inline` block per component namespace, every token still a live
+reference.
+
+### `tailwindcss/components/blended`
+
+The same, except alpha-overlay state colours are flattened at build time. A
+state authored as translucent black over a solid fill:
+
+```jsonc
+"bg": {
+  "default": { "$value": "{base.color.red.600}" },
+  "hovered": { "$value": "{base.color.alpha.black.12}" }
+}
+```
+
+is composited against its sibling `default` and emitted as one flat colour:
+
+```css
+--color-button-danger-bg-default: var(--color-red-600);
+--color-button-danger-bg-hovered: rgb(194, 33, 33);
+```
+
+which saves the component an extra stacking element for the overlay.
+
+> **The tradeoff.** A blended value is frozen at build time, so it cannot
+> follow a runtime theme or brand switch. That is why only `button.danger` uses
+> it here — its base is a fixed red. `button.primary` sits on the brand ramp,
+> so its states stay as references and are resolved at runtime. Reach for
+> blending only when the backdrop is genuinely static.
+
+## Composition: shadows
+
+Design tools export a shadow as five separate values. CSS wants one list, and
+Tailwind wants that list under `--shadow-*` for `shadow-md` to be a real
+utility. `generateShadowVars` recombines them, and still emits the parts:
+
+```css
+--shadow-md: var(--drop-shadow-md-position-x) var(--drop-shadow-md-position-y)
+  var(--drop-shadow-md-blur) var(--drop-shadow-md-spread)
+  var(--drop-shadow-md-color);
+```
+
+## Adding an output
+
+Filters match on `token.path` — a token's position in the source JSON — rather
+than on its name, so renaming a token can never silently drop it from a build.
+A new output file is one entry:
+
+```ts
+{
+  destination: 'tokens.css',
+  format: 'tailwindcss/semantic',
+  filter: inGroup('reusable-style', 'blur', 'drop-shadow'),
+  options: { outputReferences: true },
+}
+```
+
+Per-component stylesheets are not written out at all — they are derived from
+the list in `.sd/components.ts`, along with the `component/index.css` barrel.
+
+## A note on the build log
+
+Every build reports _filtered references_. That is the intended architecture:
+each layer is filtered into its own file while still referencing the layer
+below, and the files are imported together by `index.css`. The warning is
+informational.

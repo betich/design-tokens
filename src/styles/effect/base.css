@@ -1,0 +1,20 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme {
+  --blur-1: 2px; /** Blur radius 2px. */
+  --blur-2: 4px; /** Blur radius 4px. */
+  --blur-3: 8px; /** Blur radius 8px. */
+  --blur-4: 16px; /** Blur radius 16px. */
+  --effect-offset-0: 0px; /** Shadow offset 0px. */
+  --effect-offset-1: 1px; /** Shadow offset 1px. */
+  --effect-offset-2: 2px; /** Shadow offset 2px. */
+  --effect-offset-4: 4px; /** Shadow offset 4px. */
+  --effect-blur-1: 2px; /** Shadow blur 2px. */
+  --effect-blur-2: 4px; /** Shadow blur 4px. */
+  --effect-blur-3: 8px; /** Shadow blur 8px. */
+  --effect-blur-4: 16px; /** Shadow blur 16px. */
+  --effect-spread-0: 0px; /** Shadow spread 0px. */
+  --effect-spread-neg-1: -1px; /** Shadow spread -1px. */
+}

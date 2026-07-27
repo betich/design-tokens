@@ -1,0 +1,51 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme inline {
+  --spacing-p-none: var(--size-0); /** Padding step none. */
+  --spacing-p-2xs: var(--size-1); /** Padding step 2xs. */
+  --spacing-p-xs: var(--size-2); /** Padding step xs. */
+  --spacing-p-sm: var(--size-3); /** Padding step sm. */
+  --spacing-p-md: var(--size-4); /** Padding step md. */
+  --spacing-p-lg: var(--size-6); /** Padding step lg. */
+  --spacing-p-xl: var(--size-8); /** Padding step xl. */
+  --spacing-m-none: var(--size-0); /** Margin step none. */
+  --spacing-m-2xs: var(--size-1); /** Margin step 2xs. */
+  --spacing-m-xs: var(--size-2); /** Margin step xs. */
+  --spacing-m-sm: var(--size-3); /** Margin step sm. */
+  --spacing-m-md: var(--size-4); /** Margin step md. */
+  --spacing-m-lg: var(--size-6); /** Margin step lg. */
+  --spacing-m-xl: var(--size-8); /** Margin step xl. */
+  --spacing-gap-none: var(--size-0); /** Gap step none. */
+  --spacing-gap-2xs: var(--size-1); /** Gap step 2xs. */
+  --spacing-gap-xs: var(--size-2); /** Gap step xs. */
+  --spacing-gap-sm: var(--size-3); /** Gap step sm. */
+  --spacing-gap-md: var(--size-4); /** Gap step md. */
+  --spacing-gap-lg: var(--size-6); /** Gap step lg. */
+  --spacing-gap-xl: var(--size-8); /** Gap step xl. */
+}
+
+@utility p-none { padding: var(--spacing-p-none); }
+@utility p-2xs { padding: var(--spacing-p-2xs); }
+@utility p-xs { padding: var(--spacing-p-xs); }
+@utility p-sm { padding: var(--spacing-p-sm); }
+@utility p-md { padding: var(--spacing-p-md); }
+@utility p-lg { padding: var(--spacing-p-lg); }
+@utility p-xl { padding: var(--spacing-p-xl); }
+
+@utility m-none { margin: var(--spacing-m-none); }
+@utility m-2xs { margin: var(--spacing-m-2xs); }
+@utility m-xs { margin: var(--spacing-m-xs); }
+@utility m-sm { margin: var(--spacing-m-sm); }
+@utility m-md { margin: var(--spacing-m-md); }
+@utility m-lg { margin: var(--spacing-m-lg); }
+@utility m-xl { margin: var(--spacing-m-xl); }
+
+@utility gap-none { gap: var(--spacing-gap-none); }
+@utility gap-2xs { gap: var(--spacing-gap-2xs); }
+@utility gap-xs { gap: var(--spacing-gap-xs); }
+@utility gap-sm { gap: var(--spacing-gap-sm); }
+@utility gap-md { gap: var(--spacing-gap-md); }
+@utility gap-lg { gap: var(--spacing-gap-lg); }
+@utility gap-xl { gap: var(--spacing-gap-xl); }

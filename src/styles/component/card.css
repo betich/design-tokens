@@ -1,0 +1,14 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme inline {
+  --radius-card-shared-radius: var(--radius-lg); /** Corner radius. */
+  --card-shared-border-width: var(--border-width-thin); /** Border width. */
+  --spacing-card-shared-p: var(--spacing-p-lg); /** Inner padding. */
+  --spacing-card-shared-gap: var(--spacing-gap-sm); /** Stack gap. */
+  --color-card-bg-default: var(--color-surface-raised); /** Card fill. */
+  --color-card-border-default: var(--color-line-subtle); /** Card border. */
+  --color-card-title-default: var(--color-content-primary); /** Card title. */
+  --color-card-body-default: var(--color-content-secondary); /** Card body copy. */
+}

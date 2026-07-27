@@ -1,0 +1,27 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme inline {
+  --shadow-sm: var(--drop-shadow-sm-position-x) var(--drop-shadow-sm-position-y) var(--drop-shadow-sm-blur) var(--drop-shadow-sm-spread) var(--drop-shadow-sm-color);
+  --shadow-md: var(--drop-shadow-md-position-x) var(--drop-shadow-md-position-y) var(--drop-shadow-md-blur) var(--drop-shadow-md-spread) var(--drop-shadow-md-color);
+  --shadow-lg: var(--drop-shadow-lg-position-x) var(--drop-shadow-lg-position-y) var(--drop-shadow-lg-blur) var(--drop-shadow-lg-spread) var(--drop-shadow-lg-color);
+  --blur-sm: var(--blur-1); /** sm backdrop blur. */
+  --blur-md: var(--blur-2); /** md backdrop blur. */
+  --blur-lg: var(--blur-3); /** lg backdrop blur. */
+  --drop-shadow-sm-position-x: var(--effect-offset-0); /** Resting elevation. */
+  --drop-shadow-sm-position-y: var(--effect-offset-1); /** Resting elevation. */
+  --drop-shadow-sm-blur: var(--effect-blur-2); /** Resting elevation. */
+  --drop-shadow-sm-spread: var(--effect-spread-0); /** Resting elevation. */
+  --drop-shadow-sm-color: var(--color-alpha-black-8); /** Resting elevation. */
+  --drop-shadow-md-position-x: var(--effect-offset-0); /** Cards and popovers. */
+  --drop-shadow-md-position-y: var(--effect-offset-2); /** Cards and popovers. */
+  --drop-shadow-md-blur: var(--effect-blur-3); /** Cards and popovers. */
+  --drop-shadow-md-spread: var(--effect-spread-0); /** Cards and popovers. */
+  --drop-shadow-md-color: var(--color-alpha-black-12); /** Cards and popovers. */
+  --drop-shadow-lg-position-x: var(--effect-offset-0); /** Modals and overlays. */
+  --drop-shadow-lg-position-y: var(--effect-offset-4); /** Modals and overlays. */
+  --drop-shadow-lg-blur: var(--effect-blur-4); /** Modals and overlays. */
+  --drop-shadow-lg-spread: var(--effect-spread-neg-1); /** Modals and overlays. */
+  --drop-shadow-lg-color: var(--color-alpha-black-16); /** Modals and overlays. */
+}

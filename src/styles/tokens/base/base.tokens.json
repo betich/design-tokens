@@ -1,0 +1,567 @@
+{
+  "base": {
+    "color": {
+      "neutral": {
+        "0": {
+          "$type": "color",
+          "$value": "#ffffff",
+          "$description": "Neutral ramp step 0."
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#f8fafc",
+          "$description": "Neutral ramp step 50."
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#f1f5f9",
+          "$description": "Neutral ramp step 100."
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#e2e8f0",
+          "$description": "Neutral ramp step 200."
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#cbd5e1",
+          "$description": "Neutral ramp step 300."
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#94a3b8",
+          "$description": "Neutral ramp step 400."
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#64748b",
+          "$description": "Neutral ramp step 500."
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#475569",
+          "$description": "Neutral ramp step 600."
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#334155",
+          "$description": "Neutral ramp step 700."
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#1e293b",
+          "$description": "Neutral ramp step 800."
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#0f172a",
+          "$description": "Neutral ramp step 900."
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#020617",
+          "$description": "Neutral ramp step 950."
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#000000",
+          "$description": "Neutral ramp step 1000."
+        }
+      },
+      "alpha": {
+        "black": {
+          "4": {
+            "$type": "color",
+            "$value": "#0000000a",
+            "$description": "Black at 4% opacity. Used as a state overlay."
+          },
+          "8": {
+            "$type": "color",
+            "$value": "#00000014",
+            "$description": "Black at 8% opacity. Used as a state overlay."
+          },
+          "12": {
+            "$type": "color",
+            "$value": "#0000001f",
+            "$description": "Black at 12% opacity. Used as a state overlay."
+          },
+          "16": {
+            "$type": "color",
+            "$value": "#00000029",
+            "$description": "Black at 16% opacity. Used as a state overlay."
+          },
+          "24": {
+            "$type": "color",
+            "$value": "#0000003d",
+            "$description": "Black at 24% opacity. Used as a state overlay."
+          }
+        },
+        "white": {
+          "4": {
+            "$type": "color",
+            "$value": "#ffffff0a",
+            "$description": "White at 4% opacity. Used as a state overlay."
+          },
+          "8": {
+            "$type": "color",
+            "$value": "#ffffff14",
+            "$description": "White at 8% opacity. Used as a state overlay."
+          },
+          "12": {
+            "$type": "color",
+            "$value": "#ffffff1f",
+            "$description": "White at 12% opacity. Used as a state overlay."
+          },
+          "16": {
+            "$type": "color",
+            "$value": "#ffffff29",
+            "$description": "White at 16% opacity. Used as a state overlay."
+          },
+          "24": {
+            "$type": "color",
+            "$value": "#ffffff3d",
+            "$description": "White at 24% opacity. Used as a state overlay."
+          }
+        }
+      },
+      "red": {
+        "50": {
+          "$type": "color",
+          "$value": "#fef2f2",
+          "$description": "Red ramp step 50."
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#fee2e2",
+          "$description": "Red ramp step 100."
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#f87171",
+          "$description": "Red ramp step 400."
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#ef4444",
+          "$description": "Red ramp step 500."
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#dc2626",
+          "$description": "Red ramp step 600."
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#b91c1c",
+          "$description": "Red ramp step 700."
+        }
+      },
+      "green": {
+        "50": {
+          "$type": "color",
+          "$value": "#f0fdf4",
+          "$description": "Green ramp step 50."
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#4ade80",
+          "$description": "Green ramp step 400."
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#22c55e",
+          "$description": "Green ramp step 500."
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#16a34a",
+          "$description": "Green ramp step 600."
+        }
+      },
+      "amber": {
+        "50": {
+          "$type": "color",
+          "$value": "#fffbeb",
+          "$description": "Amber ramp step 50."
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#fbbf24",
+          "$description": "Amber ramp step 400."
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#f59e0b",
+          "$description": "Amber ramp step 500."
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#d97706",
+          "$description": "Amber ramp step 600."
+        }
+      }
+    },
+    "size": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0rem",
+        "$description": "Size scale step 0 (0rem). Spacing and box dimensions."
+      },
+      "1": {
+        "$type": "dimension",
+        "$value": "0.25rem",
+        "$description": "Size scale step 1 (0.25rem). Spacing and box dimensions."
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "0.5rem",
+        "$description": "Size scale step 2 (0.5rem). Spacing and box dimensions."
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "0.75rem",
+        "$description": "Size scale step 3 (0.75rem). Spacing and box dimensions."
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "1rem",
+        "$description": "Size scale step 4 (1rem). Spacing and box dimensions."
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "1.25rem",
+        "$description": "Size scale step 5 (1.25rem). Spacing and box dimensions."
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "1.5rem",
+        "$description": "Size scale step 6 (1.5rem). Spacing and box dimensions."
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "2rem",
+        "$description": "Size scale step 8 (2rem). Spacing and box dimensions."
+      },
+      "10": {
+        "$type": "dimension",
+        "$value": "2.5rem",
+        "$description": "Size scale step 10 (2.5rem). Spacing and box dimensions."
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "3rem",
+        "$description": "Size scale step 12 (3rem). Spacing and box dimensions."
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "4rem",
+        "$description": "Size scale step 16 (4rem). Spacing and box dimensions."
+      },
+      "20": {
+        "$type": "dimension",
+        "$value": "5rem",
+        "$description": "Size scale step 20 (5rem). Spacing and box dimensions."
+      }
+    },
+    "border": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$description": "Border width 0px."
+      },
+      "1": {
+        "$type": "dimension",
+        "$value": "1px",
+        "$description": "Border width 1px."
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$description": "Border width 2px."
+      }
+    },
+    "radius": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0rem",
+        "$description": "Corner radius 0rem."
+      },
+      "1": {
+        "$type": "dimension",
+        "$value": "0.125rem",
+        "$description": "Corner radius 0.125rem."
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "0.25rem",
+        "$description": "Corner radius 0.25rem."
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "0.5rem",
+        "$description": "Corner radius 0.5rem."
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "0.75rem",
+        "$description": "Corner radius 0.75rem."
+      },
+      "full": {
+        "$type": "dimension",
+        "$value": "624.9375rem",
+        "$description": "Corner radius 624.9375rem."
+      }
+    },
+    "blur": {
+      "1": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$description": "Blur radius 2px."
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Blur radius 4px."
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Blur radius 8px."
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Blur radius 16px."
+      }
+    },
+    "effect": {
+      "offset": {
+        "0": {
+          "$type": "dimension",
+          "$value": "0px",
+          "$description": "Shadow offset 0px."
+        },
+        "1": {
+          "$type": "dimension",
+          "$value": "1px",
+          "$description": "Shadow offset 1px."
+        },
+        "2": {
+          "$type": "dimension",
+          "$value": "2px",
+          "$description": "Shadow offset 2px."
+        },
+        "4": {
+          "$type": "dimension",
+          "$value": "4px",
+          "$description": "Shadow offset 4px."
+        }
+      },
+      "blur": {
+        "1": {
+          "$type": "dimension",
+          "$value": "2px",
+          "$description": "Shadow blur 2px."
+        },
+        "2": {
+          "$type": "dimension",
+          "$value": "4px",
+          "$description": "Shadow blur 4px."
+        },
+        "3": {
+          "$type": "dimension",
+          "$value": "8px",
+          "$description": "Shadow blur 8px."
+        },
+        "4": {
+          "$type": "dimension",
+          "$value": "16px",
+          "$description": "Shadow blur 16px."
+        }
+      },
+      "spread": {
+        "0": {
+          "$type": "dimension",
+          "$value": "0px",
+          "$description": "Shadow spread 0px."
+        },
+        "neg-1": {
+          "$type": "dimension",
+          "$value": "-1px",
+          "$description": "Shadow spread -1px."
+        }
+      }
+    },
+    "font": {
+      "sans": {
+        "$type": "fontFamily",
+        "$value": "Inter, ui-sans-serif, system-ui, -apple-system, sans-serif",
+        "$description": "Default UI typeface."
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": "ui-monospace, SFMono-Regular, Menlo, monospace",
+        "$description": "Monospace typeface for code."
+      },
+      "size": {
+        "12": {
+          "$type": "dimension",
+          "$value": "0.75rem",
+          "$description": "Font size 12px (0.75rem)."
+        },
+        "14": {
+          "$type": "dimension",
+          "$value": "0.875rem",
+          "$description": "Font size 14px (0.875rem)."
+        },
+        "16": {
+          "$type": "dimension",
+          "$value": "1rem",
+          "$description": "Font size 16px (1rem)."
+        },
+        "18": {
+          "$type": "dimension",
+          "$value": "1.125rem",
+          "$description": "Font size 18px (1.125rem)."
+        },
+        "20": {
+          "$type": "dimension",
+          "$value": "1.25rem",
+          "$description": "Font size 20px (1.25rem)."
+        },
+        "24": {
+          "$type": "dimension",
+          "$value": "1.5rem",
+          "$description": "Font size 24px (1.5rem)."
+        },
+        "30": {
+          "$type": "dimension",
+          "$value": "1.875rem",
+          "$description": "Font size 30px (1.875rem)."
+        },
+        "36": {
+          "$type": "dimension",
+          "$value": "2.25rem",
+          "$description": "Font size 36px (2.25rem)."
+        }
+      },
+      "weight": {
+        "regular": {
+          "$type": "fontWeight",
+          "$value": "400",
+          "$description": "Font weight 400."
+        },
+        "medium": {
+          "$type": "fontWeight",
+          "$value": "500",
+          "$description": "Font weight 500."
+        },
+        "semibold": {
+          "$type": "fontWeight",
+          "$value": "600",
+          "$description": "Font weight 600."
+        },
+        "bold": {
+          "$type": "fontWeight",
+          "$value": "700",
+          "$description": "Font weight 700."
+        }
+      },
+      "line-height": {
+        "16": {
+          "$type": "dimension",
+          "$value": "1rem",
+          "$description": "Line height 16px (1rem)."
+        },
+        "20": {
+          "$type": "dimension",
+          "$value": "1.25rem",
+          "$description": "Line height 20px (1.25rem)."
+        },
+        "24": {
+          "$type": "dimension",
+          "$value": "1.5rem",
+          "$description": "Line height 24px (1.5rem)."
+        },
+        "28": {
+          "$type": "dimension",
+          "$value": "1.75rem",
+          "$description": "Line height 28px (1.75rem)."
+        },
+        "32": {
+          "$type": "dimension",
+          "$value": "2rem",
+          "$description": "Line height 32px (2rem)."
+        },
+        "36": {
+          "$type": "dimension",
+          "$value": "2.25rem",
+          "$description": "Line height 36px (2.25rem)."
+        },
+        "44": {
+          "$type": "dimension",
+          "$value": "2.75rem",
+          "$description": "Line height 44px (2.75rem)."
+        }
+      }
+    },
+    "layout": {
+      "container": {
+        "640": {
+          "$type": "dimension",
+          "$value": "40rem",
+          "$description": "Container max width at the 640px breakpoint."
+        },
+        "768": {
+          "$type": "dimension",
+          "$value": "48rem",
+          "$description": "Container max width at the 768px breakpoint."
+        },
+        "1024": {
+          "$type": "dimension",
+          "$value": "64rem",
+          "$description": "Container max width at the 1024px breakpoint."
+        },
+        "1280": {
+          "$type": "dimension",
+          "$value": "80rem",
+          "$description": "Container max width at the 1280px breakpoint."
+        }
+      },
+      "columns": {
+        "4": {
+          "$type": "number",
+          "$value": "4",
+          "$description": "4-column grid."
+        },
+        "8": {
+          "$type": "number",
+          "$value": "8",
+          "$description": "8-column grid."
+        },
+        "12": {
+          "$type": "number",
+          "$value": "12",
+          "$description": "12-column grid."
+        }
+      },
+      "gutter": {
+        "16": {
+          "$type": "dimension",
+          "$value": "1rem",
+          "$description": "Grid gutter 1rem."
+        },
+        "24": {
+          "$type": "dimension",
+          "$value": "1.5rem",
+          "$description": "Grid gutter 1.5rem."
+        },
+        "32": {
+          "$type": "dimension",
+          "$value": "2rem",
+          "$description": "Grid gutter 2rem."
+        }
+      }
+    }
+  }
+}

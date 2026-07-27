@@ -1,0 +1,54 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Introduction/Welcome" />
+
+# Acme Design Tokens
+
+A worked example of a design token pipeline: **DTCG token JSON in, Tailwind CSS v4
+in, components distributed through the shadcn CLI**.
+
+The point of this repository is the _builder_ — `.sd/` — not the components.
+Four small components exist so the generated tokens have something to prove
+themselves against, and so the registry has something to publish.
+
+## The idea
+
+Design tools export flat lists of values. Applications need those values to
+arrive as something a developer can use without thinking: a class name, a CSS
+variable, a utility. The gap between those two is what this pipeline closes.
+
+Tokens are organised in three layers, and each layer is only allowed to
+reference the one directly beneath it:
+
+| Layer         | Collection                                       | Answers                | Example                                                                |
+| ------------- | ------------------------------------------------ | ---------------------- | ---------------------------------------------------------------------- |
+| **Primitive** | `base`, `brand`                                  | _What values exist?_   | `--color-neutral-900: #0f172a`                                         |
+| **Semantic**  | `theme`, `reusable-style`, `typescale`, `layout` | _What do they mean?_   | `--color-content-primary: var(--color-neutral-900)`                    |
+| **Component** | `component`                                      | _Where are they used?_ | `--color-button-secondary-label-default: var(--color-content-primary)` |
+
+A component names only the third layer. That indirection is what lets the
+theme, the brand and the type scale change underneath it — try the **theme**
+and **brand** toolbar controls above on any component story.
+
+## What is worth reading
+
+- **Design Tokens → Pipeline** — how a token becomes CSS, and the eight custom
+  formats that do it.
+- **Design Tokens → Reference** — the generated tokens, rendered live.
+- **Design Tokens → Adding a Component** — the end-to-end workflow.
+- **Components** — Button, Badge, Input and Card.
+
+## Running it
+
+```bash
+pnpm install
+pnpm build:tokens     # token JSON -> src/styles/**/*.css
+pnpm storybook        # this site
+pnpm test             # unit tests
+pnpm build:registry   # registry.json for the shadcn CLI
+```
+
+<div className="text-body-sm leading-body-sm text-content-secondary mt-lg">
+  Acme is a placeholder. Every name here — the brand ramps, the semantic
+  vocabulary, the component namespaces — is meant to be replaced with your own.
+</div>

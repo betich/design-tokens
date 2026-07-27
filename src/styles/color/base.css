@@ -1,0 +1,53 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme {
+  --color-primary-50: #eef2ff; /** Brand primary ramp step 50. Overridden per brand. */
+  --color-primary-100: #e0e7ff; /** Brand primary ramp step 100. Overridden per brand. */
+  --color-primary-200: #c7d2fe; /** Brand primary ramp step 200. Overridden per brand. */
+  --color-primary-300: #a5b4fc; /** Brand primary ramp step 300. Overridden per brand. */
+  --color-primary-400: #818cf8; /** Brand primary ramp step 400. Overridden per brand. */
+  --color-primary-500: #4f46e5; /** Brand primary ramp step 500. Overridden per brand. */
+  --color-primary-600: #4338ca; /** Brand primary ramp step 600. Overridden per brand. */
+  --color-primary-700: #3730a3; /** Brand primary ramp step 700. Overridden per brand. */
+  --color-primary-800: #312e81; /** Brand primary ramp step 800. Overridden per brand. */
+  --color-primary-900: #1e1b4b; /** Brand primary ramp step 900. Overridden per brand. */
+  --color-neutral-0: #ffffff; /** Neutral ramp step 0. */
+  --color-neutral-50: #f8fafc; /** Neutral ramp step 50. */
+  --color-neutral-100: #f1f5f9; /** Neutral ramp step 100. */
+  --color-neutral-200: #e2e8f0; /** Neutral ramp step 200. */
+  --color-neutral-300: #cbd5e1; /** Neutral ramp step 300. */
+  --color-neutral-400: #94a3b8; /** Neutral ramp step 400. */
+  --color-neutral-500: #64748b; /** Neutral ramp step 500. */
+  --color-neutral-600: #475569; /** Neutral ramp step 600. */
+  --color-neutral-700: #334155; /** Neutral ramp step 700. */
+  --color-neutral-800: #1e293b; /** Neutral ramp step 800. */
+  --color-neutral-900: #0f172a; /** Neutral ramp step 900. */
+  --color-neutral-950: #020617; /** Neutral ramp step 950. */
+  --color-neutral-1000: #000000; /** Neutral ramp step 1000. */
+  --color-alpha-black-4: rgba(0, 0, 0, 0.04); /** Black at 4% opacity. Used as a state overlay. */
+  --color-alpha-black-8: rgba(0, 0, 0, 0.08); /** Black at 8% opacity. Used as a state overlay. */
+  --color-alpha-black-12: rgba(0, 0, 0, 0.12); /** Black at 12% opacity. Used as a state overlay. */
+  --color-alpha-black-16: rgba(0, 0, 0, 0.16); /** Black at 16% opacity. Used as a state overlay. */
+  --color-alpha-black-24: rgba(0, 0, 0, 0.24); /** Black at 24% opacity. Used as a state overlay. */
+  --color-alpha-white-4: rgba(255, 255, 255, 0.04); /** White at 4% opacity. Used as a state overlay. */
+  --color-alpha-white-8: rgba(255, 255, 255, 0.08); /** White at 8% opacity. Used as a state overlay. */
+  --color-alpha-white-12: rgba(255, 255, 255, 0.12); /** White at 12% opacity. Used as a state overlay. */
+  --color-alpha-white-16: rgba(255, 255, 255, 0.16); /** White at 16% opacity. Used as a state overlay. */
+  --color-alpha-white-24: rgba(255, 255, 255, 0.24); /** White at 24% opacity. Used as a state overlay. */
+  --color-red-50: #fef2f2; /** Red ramp step 50. */
+  --color-red-100: #fee2e2; /** Red ramp step 100. */
+  --color-red-400: #f87171; /** Red ramp step 400. */
+  --color-red-500: #ef4444; /** Red ramp step 500. */
+  --color-red-600: #dc2626; /** Red ramp step 600. */
+  --color-red-700: #b91c1c; /** Red ramp step 700. */
+  --color-green-50: #f0fdf4; /** Green ramp step 50. */
+  --color-green-400: #4ade80; /** Green ramp step 400. */
+  --color-green-500: #22c55e; /** Green ramp step 500. */
+  --color-green-600: #16a34a; /** Green ramp step 600. */
+  --color-amber-50: #fffbeb; /** Amber ramp step 50. */
+  --color-amber-400: #fbbf24; /** Amber ramp step 400. */
+  --color-amber-500: #f59e0b; /** Amber ramp step 500. */
+  --color-amber-600: #d97706; /** Amber ramp step 600. */
+}

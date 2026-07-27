@@ -1,0 +1,41 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme inline {
+  --color-button-danger-bg-hovered: rgb(194, 33, 33);
+  --color-button-danger-bg-pressed: rgb(167, 29, 29);
+  --spacing-button-size-sm-height: var(--size-8); /** Small button height. */
+  --spacing-button-size-md-height: var(--size-10); /** Medium button height. */
+  --spacing-button-size-lg-height: var(--size-12); /** Large button height. */
+  --color-button-danger-bg-default: var(--color-red-600); /** Destructive fill. */
+  --color-button-danger-label-default: var(--color-neutral-0); /** Destructive label. */
+  --color-button-secondary-bg-pressed: var(--color-neutral-200); /** Secondary pressed fill. */
+  --color-button-ghost-bg-pressed: var(--color-neutral-200); /** Ghost pressed fill. */
+  --radius-button-shared-radius: var(--radius-md); /** Corner radius, all variants. */
+  --button-shared-border-width: var(--border-width-thin); /** Border width for outlined variants. */
+  --spacing-button-size-sm-p-x: var(--spacing-p-sm); /** Small button horizontal padding. */
+  --spacing-button-size-sm-gap: var(--spacing-gap-2xs); /** Small button icon gap. */
+  --spacing-button-size-md-p-x: var(--spacing-p-md); /** Medium button horizontal padding. */
+  --spacing-button-size-md-gap: var(--spacing-gap-xs); /** Medium button icon gap. */
+  --spacing-button-size-lg-p-x: var(--spacing-p-lg); /** Large button horizontal padding. */
+  --spacing-button-size-lg-gap: var(--spacing-gap-sm); /** Large button icon gap. */
+  --color-button-primary-bg-default: var(--color-surface-accent); /** Primary fill. */
+  --color-button-primary-bg-hovered: var(--color-surface-accent-hovered); /** Primary hover fill. */
+  --color-button-primary-bg-pressed: var(--color-surface-accent-pressed); /** Primary pressed fill. */
+  --color-button-primary-bg-disabled: var(--color-surface-disabled); /** Disabled fill. */
+  --color-button-primary-label-default: var(--color-content-on-accent); /** Primary label. */
+  --color-button-primary-label-disabled: var(--color-content-disabled); /** Disabled label. */
+  --color-button-danger-bg-disabled: var(--color-surface-disabled); /** Disabled fill. */
+  --color-button-danger-label-disabled: var(--color-content-disabled); /** Disabled label. */
+  --color-button-secondary-bg-default: var(--color-surface-raised); /** Secondary fill. */
+  --color-button-secondary-bg-hovered: var(--color-surface-sunken); /** Secondary hover fill. */
+  --color-button-secondary-bg-disabled: var(--color-surface-disabled); /** Disabled fill. */
+  --color-button-secondary-label-default: var(--color-content-primary); /** Secondary label. */
+  --color-button-secondary-label-disabled: var(--color-content-disabled); /** Disabled label. */
+  --color-button-secondary-border-default: var(--color-line-strong); /** Secondary border. */
+  --color-button-secondary-border-disabled: var(--color-line-subtle); /** Disabled border. */
+  --color-button-ghost-bg-hovered: var(--color-surface-sunken); /** Ghost hover fill. */
+  --color-button-ghost-label-default: var(--color-content-primary); /** Ghost label. */
+  --color-button-ghost-label-disabled: var(--color-content-disabled); /** Disabled label. */
+}

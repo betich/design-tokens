@@ -1,0 +1,497 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "acme",
+  "homepage": "https://example.com",
+  "items": [
+    {
+      "name": "badge",
+      "type": "registry:component",
+      "description": "A status pill in five tones, each mapped to a semantic surface and content pair.",
+      "title": "Badge",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "tailwind-variants"
+      ],
+      "files": [
+        {
+          "path": "src/components/atoms/Badge/Badge.tsx",
+          "type": "registry:component",
+          "target": "components/atoms/Badge/Badge.tsx"
+        },
+        {
+          "path": "src/components/atoms/Badge/badgeVariants.ts",
+          "type": "registry:file",
+          "target": "components/atoms/Badge/badgeVariants.ts"
+        },
+        {
+          "path": "src/components/atoms/Badge/index.ts",
+          "type": "registry:file",
+          "target": "components/atoms/Badge/index.ts"
+        },
+        {
+          "path": "src/styles/component/badge.css",
+          "type": "registry:style",
+          "target": "styles/component/badge.css"
+        },
+        {
+          "path": "src/styles/color/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/base.css"
+        },
+        {
+          "path": "src/styles/border/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/border/base.css"
+        },
+        {
+          "path": "src/styles/effect/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/effect/base.css"
+        },
+        {
+          "path": "src/styles/layout/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/layout/base.css"
+        },
+        {
+          "path": "src/styles/spacing/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/spacing/base.css"
+        },
+        {
+          "path": "src/styles/typography/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/typography/base.css"
+        },
+        {
+          "path": "src/styles/color/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/tokens.css"
+        },
+        {
+          "path": "src/styles/color/brand.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/brand.css"
+        },
+        {
+          "path": "src/styles/border/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/border/tokens.css"
+        },
+        {
+          "path": "src/styles/effect/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/effect/tokens.css"
+        },
+        {
+          "path": "src/styles/layout/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/layout/tokens.css"
+        },
+        {
+          "path": "src/styles/spacing/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/spacing/tokens.css"
+        },
+        {
+          "path": "src/styles/typography/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/typography/tokens.css"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "content": "",
+          "type": "registry:lib",
+          "target": "lib/utils.ts"
+        }
+      ],
+      "docs": "Import from `@/components/atoms/Badge`.",
+      "categories": [
+        "atoms"
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:component",
+      "description": "A button with four variants and three sizes, styled entirely from component tokens.",
+      "title": "Button",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "tailwind-variants",
+        "@radix-ui/react-slot"
+      ],
+      "files": [
+        {
+          "path": "src/components/atoms/Button/Button.tsx",
+          "type": "registry:component",
+          "target": "components/atoms/Button/Button.tsx"
+        },
+        {
+          "path": "src/components/atoms/Button/buttonVariants.ts",
+          "type": "registry:file",
+          "target": "components/atoms/Button/buttonVariants.ts"
+        },
+        {
+          "path": "src/components/atoms/Button/index.ts",
+          "type": "registry:file",
+          "target": "components/atoms/Button/index.ts"
+        },
+        {
+          "path": "src/styles/component/button.css",
+          "type": "registry:style",
+          "target": "styles/component/button.css"
+        },
+        {
+          "path": "src/styles/color/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/base.css"
+        },
+        {
+          "path": "src/styles/border/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/border/base.css"
+        },
+        {
+          "path": "src/styles/effect/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/effect/base.css"
+        },
+        {
+          "path": "src/styles/layout/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/layout/base.css"
+        },
+        {
+          "path": "src/styles/spacing/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/spacing/base.css"
+        },
+        {
+          "path": "src/styles/typography/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/typography/base.css"
+        },
+        {
+          "path": "src/styles/color/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/tokens.css"
+        },
+        {
+          "path": "src/styles/color/brand.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/brand.css"
+        },
+        {
+          "path": "src/styles/border/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/border/tokens.css"
+        },
+        {
+          "path": "src/styles/effect/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/effect/tokens.css"
+        },
+        {
+          "path": "src/styles/layout/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/layout/tokens.css"
+        },
+        {
+          "path": "src/styles/spacing/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/spacing/tokens.css"
+        },
+        {
+          "path": "src/styles/typography/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/typography/tokens.css"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "content": "",
+          "type": "registry:lib",
+          "target": "lib/utils.ts"
+        }
+      ],
+      "docs": "Import from `@/components/atoms/Button`. Use `asChild` to render a link with button styling.",
+      "categories": [
+        "atoms"
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:component",
+      "description": "A single-line text field whose every state is one border token.",
+      "title": "Input",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "tailwind-variants"
+      ],
+      "files": [
+        {
+          "path": "src/components/atoms/Input/Input.tsx",
+          "type": "registry:component",
+          "target": "components/atoms/Input/Input.tsx"
+        },
+        {
+          "path": "src/components/atoms/Input/inputVariants.ts",
+          "type": "registry:file",
+          "target": "components/atoms/Input/inputVariants.ts"
+        },
+        {
+          "path": "src/components/atoms/Input/index.ts",
+          "type": "registry:file",
+          "target": "components/atoms/Input/index.ts"
+        },
+        {
+          "path": "src/styles/component/input.css",
+          "type": "registry:style",
+          "target": "styles/component/input.css"
+        },
+        {
+          "path": "src/styles/color/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/base.css"
+        },
+        {
+          "path": "src/styles/border/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/border/base.css"
+        },
+        {
+          "path": "src/styles/effect/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/effect/base.css"
+        },
+        {
+          "path": "src/styles/layout/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/layout/base.css"
+        },
+        {
+          "path": "src/styles/spacing/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/spacing/base.css"
+        },
+        {
+          "path": "src/styles/typography/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/typography/base.css"
+        },
+        {
+          "path": "src/styles/color/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/tokens.css"
+        },
+        {
+          "path": "src/styles/color/brand.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/brand.css"
+        },
+        {
+          "path": "src/styles/border/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/border/tokens.css"
+        },
+        {
+          "path": "src/styles/effect/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/effect/tokens.css"
+        },
+        {
+          "path": "src/styles/layout/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/layout/tokens.css"
+        },
+        {
+          "path": "src/styles/spacing/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/spacing/tokens.css"
+        },
+        {
+          "path": "src/styles/typography/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/typography/tokens.css"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "content": "",
+          "type": "registry:lib",
+          "target": "lib/utils.ts"
+        }
+      ],
+      "docs": "Import from `@/components/atoms/Input`. Pass `invalid` to show the error border and set `aria-invalid`.",
+      "categories": [
+        "atoms"
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:component",
+      "description": "A slot-based surface with header, title, body and footer parts, and three elevations.",
+      "title": "Card",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "tailwind-variants"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "src/components/molecules/Card/Card.tsx",
+          "type": "registry:component",
+          "target": "components/molecules/Card/Card.tsx"
+        },
+        {
+          "path": "src/components/molecules/Card/cardVariants.ts",
+          "type": "registry:file",
+          "target": "components/molecules/Card/cardVariants.ts"
+        },
+        {
+          "path": "src/components/molecules/Card/index.ts",
+          "type": "registry:file",
+          "target": "components/molecules/Card/index.ts"
+        },
+        {
+          "path": "src/styles/component/card.css",
+          "type": "registry:style",
+          "target": "styles/component/card.css"
+        },
+        {
+          "path": "src/styles/color/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/base.css"
+        },
+        {
+          "path": "src/styles/border/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/border/base.css"
+        },
+        {
+          "path": "src/styles/effect/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/effect/base.css"
+        },
+        {
+          "path": "src/styles/layout/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/layout/base.css"
+        },
+        {
+          "path": "src/styles/spacing/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/spacing/base.css"
+        },
+        {
+          "path": "src/styles/typography/base.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/typography/base.css"
+        },
+        {
+          "path": "src/styles/color/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/tokens.css"
+        },
+        {
+          "path": "src/styles/color/brand.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/color/brand.css"
+        },
+        {
+          "path": "src/styles/border/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/border/tokens.css"
+        },
+        {
+          "path": "src/styles/effect/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/effect/tokens.css"
+        },
+        {
+          "path": "src/styles/layout/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/layout/tokens.css"
+        },
+        {
+          "path": "src/styles/spacing/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/spacing/tokens.css"
+        },
+        {
+          "path": "src/styles/typography/tokens.css",
+          "content": "",
+          "type": "registry:style",
+          "target": "styles/typography/tokens.css"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "content": "",
+          "type": "registry:lib",
+          "target": "lib/utils.ts"
+        }
+      ],
+      "docs": "Import from `@/components/molecules/Card`. Elevations map to the composed `--shadow-*` properties.",
+      "categories": [
+        "molecules"
+      ]
+    }
+  ]
+}

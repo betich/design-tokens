@@ -1,0 +1,15 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme inline {
+  --border-width-none: var(--border-0); /** No border. */
+  --border-width-thin: var(--border-1); /** Default 1px border. */
+  --border-width-thick: var(--border-2); /** Emphasised 2px border. */
+  --radius-none: var(--radius-0); /** Square corners. */
+  --radius-sm: var(--radius-1); /** Subtle rounding. */
+  --radius-md: var(--radius-2); /** Default control rounding. */
+  --radius-lg: var(--radius-3); /** Card rounding. */
+  --radius-xl: var(--radius-4); /** Large surface rounding. */
+  --radius-full: var(--radius-full); /** Pill / circle. */
+}

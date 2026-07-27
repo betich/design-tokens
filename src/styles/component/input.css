@@ -1,0 +1,20 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme inline {
+  --spacing-input-shared-height: var(--size-10); /** Control height. */
+  --radius-input-shared-radius: var(--radius-md); /** Corner radius. */
+  --input-shared-border-width: var(--border-width-thin); /** Border width. */
+  --spacing-input-shared-p-x: var(--spacing-p-sm); /** Horizontal padding. */
+  --color-input-bg-default: var(--color-surface-raised); /** Field fill. */
+  --color-input-bg-disabled: var(--color-surface-disabled); /** Disabled fill. */
+  --color-input-label-default: var(--color-content-primary); /** Typed value. */
+  --color-input-label-disabled: var(--color-content-disabled); /** Disabled value. */
+  --color-input-placeholder-default: var(--color-content-muted); /** Placeholder text. */
+  --color-input-border-default: var(--color-line-subtle); /** Resting border. */
+  --color-input-border-hovered: var(--color-line-strong); /** Hover border. */
+  --color-input-border-focused: var(--color-line-accent); /** Focus border. */
+  --color-input-border-error: var(--color-line-danger); /** Invalid border. */
+  --color-input-border-disabled: var(--color-line-subtle); /** Disabled border. */
+}
