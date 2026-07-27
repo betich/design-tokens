@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   pull_request:
+  # REGISTRY_URL is baked into registry.json at build time, so changing the
+  # repo variable needs a rebuild rather than just a redeploy.
+  workflow_dispatch:
 
 jobs:
   verify:
